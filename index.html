@@ -7,6 +7,7 @@
     <title>MOPROSOFT</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.less">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="index.js"></script>
 
@@ -19,6 +20,8 @@
         <h1 id="section0">MoProSoft Processes</h1>
         <br><br><br>
         <button id="fixed"> Home</button>
+        <button id="fixedR"> Ver Roles</button>
+
         <img src="resources/moprosoft.png" alt="moprosoft" usemap="#img1">
         <map name="img1">
             <area shape="rect" coords="12,445,165,350" alt="SpecificProject" href="#section1">
@@ -65,29 +68,18 @@
         </p>
         <img src=" resources/DMS.png" alt="moprosoft" usemap="#img3">
         <map name="img3">
-            <area shape="rect" coords="20,12,165,100" alt="start" href="">
+            <area shape="rect" coords="20,12,165,100" alt="start" href="#sectionStart">
             <area shape="rect" coords="178,100,323,188" alt="requirements" href="#sectionReq">
-            <area shape="rect" coords="338,185,483,275" alt="design" href="">
+            <area shape="rect" coords="338,185,483,275" alt="design" href="#sectionDesign2">
             <area shape="rect" coords="490,292,635,380" alt="code" href="#sectionCode">
             <area shape="rect" coords="640,395,785,485" alt="integrationandTest" href="#sectionIntegration">
-            <area shape="rect" coords="20,398,165,485" alt="closing" href="#sectionClosing">
+            <area shape="rect" coords="20,398,165,485" alt="closing" href="#sectionClosing2">
         </map>
     </div>
 
     <br class="brx8">
 
-    <!-- REQUIREMENTS -->
-    <div class="smaller">
-        <h2 id="sectionReq">Requirements</h2>
-        <button id="button3">More Info</button>
-        <br><br>
-        <p id="p3">
-            Backlog: <br>
-            Who: Scrum owner, team, scrum master, stakeholders <br>
-            Purpose: Create a list of all things that needs to be done in the project
-        </p>
-        <img src="resources/requirements.png" alt="">
-    </div>
+
 
     <br class="brx8">
 
@@ -112,8 +104,8 @@
             <area shape="rect" coords="15,18,145,150" alt="DefineSprintGoal" href="#sectionDefineSprint">
             <area shape="rect" coords="230,18,360,150" alt="SelectRelevantUS" href="#sectionSelectUStories">
             <area shape="rect" coords="450,18,580,150" alt="BrokeToSmaller" href="#sectionBroke">
-            <area shape="rect" coords="70,240,200,370" alt="AssignEstimate" href="#sectionAssignEstimate">
-            <area shape="rect" coords="290,240,415,370" alt="DefineCapacity" href="#sectionDefineCapacity">
+            <area shape="rect" coords="70,240,200,370" alt="DefineCapacity" href="#sectionDefineCapacity">
+            <area shape="rect" coords="290,240,415,370" alt="AssignEstimate" href="#sectionAssignEstimate">
         </map>
     </div>
 
@@ -221,9 +213,39 @@
     <div>
         <h2 id="sectionDefineSprint">Define Sprint Goal</h2>
 
-        <a href="">1.1 Define description of the project</a>
-        <a href="">1.2 Define process</a>
-        <a href="">1.3 Define deliverables</a>
+        <a id="a11">1.1 Define description of the project</a>
+        <p id="p11">
+            <mark>Description: </mark> <br>
+            Revisar con el Responsable de Gestión de Proyectos la Descripción del Proyecto<br>
+            <mark>Input: </mark> Descripción del Proyecto<br>
+
+            <mark>Roles: </mark> Scrum Owner, Scrum Master<br>
+        </p>
+
+        <a id="a12">1.2 Define process</a>
+        <p id="p12">
+            <mark>Description: </mark> <br>
+            Con base a la descripcion del proyecto y al desarrollo y mantenimiento del proyecto, se define el proceso
+            <br>
+            especifico donde se considera el calcance, la complejidad y la agnitud del proyecto <br>
+            <mark>Input: </mark> Descripcion del proyecto, Documentacion del proceso<br>
+            <mark>Output: </mark> Proyecto Especifico<br>
+
+            <mark>Roles: </mark> Scrum master<br>
+        </p>
+
+        <a id="a13">1.3 Define deliverables</a>
+        <p id="p13">
+            <mark>Description: </mark> <br>
+            Definir con el cliente el protocolo de entregas de cada entregable establecido en la descripcion del
+            proyecto <br>
+            <mark>Input: </mark> Descripcion del proyecto<br>
+            <mark>Output: </mark> Protocolo de entregas<br>
+
+            <mark>Roles: </mark> Scrum master, stackholders<br>
+        </p>
+
+
     </div>
 
     <br class="brx8">
@@ -231,152 +253,1343 @@
     <!-- Select user stories -->
     <div>
         <h2 id="sectionSelectUStories">Select user stories</h2>
+        <a id="a14">1.4 Identify cycles and activities</a>
+        <p id="p14">
+            <mark>Description: </mark> <br>
+            Identificar el número de ciclos y las actividades específicas que deben llevarse a cabo para producir los
+            <br>
+            entregables y sus componentes identificados en la Descripción del Proyecto <br>
 
-        <a href="">1.4 Identify cycles and activities</a>
-        <a href="">1.5 Identify the relationship between activities</a>
+            <mark>Roles: </mark> Scrum master<br>
+        </p>
 
-    </div>
+        <a id="a15">1.5 Identify the relationship between activities</a>
+        <p id="p15">
+            <mark>Description: </mark> <br>
+            Identificar y documentar la relació n y dependencia de cada una de las actividades<br>
+            <mark>Roles: </mark> Scrum master<br>
+        </p>
 
-    <br class="brx8">
+        <br class="brx8">
 
-    <!-- Broke user stories into small -->
-    <div>
-        <h2 id="sectionBroke">Broke user stories into small</h2>
-        <a href="">1.6 Generate specific activities</a>
-    </div>
+        <!-- Broke user stories into small -->
+        <div>
+            <h2 id="sectionBroke">Broke user stories into small</h2>
+            <a id="a16">1.6 Generate specific activities</a>
+            <p id="p16">
+                <mark>Description: </mark> <br>
+                Identificar las actividades para llevar a cabo el Protocolo de Entrega. Documentar el resultado como
+                <br>
+                Ciclos y Actividades<br>
+                <mark>Input: </mark> Descripcion del proyecto<br>
+                <mark>Output: </mark> Protocolo de entregas, ciclos y actividades<br>
 
-    <br class="brx8">
-
-    <!-- Assign and estimate prority -->
-    <div>
-        <h2 id="sectionAssignEstimate">Assign and estimate prority</h2>
-        <a href="">1.7 Establish estimated time</a>
-        <a href="">1.8 Define characteristics of resources</a>
-        <a href="">1.9 Conform work team</a>
-        <a href="">1.10 Assign start and end dates to each activity</a>
-    </div>
-
-    <br class="brx8">
-
-    <!-- Define the capacity -->
-    <div>
-        <h2 id="sectionDefineCapacity">Define the capacity</h2>
-
-        <a href="">1.11 Evaluate estimated cost</a>
-        <a href="">1.12 Identify risks</a>
-        <a href="">1.13 Generate project plan</a>
-        <a href="">1.14 Generate development plan</a>
-        <a href="">1.15 Verify development plan</a>
-        <a href="">1.16 Correct development plan</a>
-        <a href="">1.17 Validate development plan</a>
-        <a href="">1.18 Correct development plan</a>
-        <a href="">1.19 Start the cycle</a>
-    </div>
-
-    <br class="brx8">
-
-    <!-- ------------------------------------------------------- -->
-    <!-- -----------------------EXECUTION----------------------- -->
-    <!-- ------------------------------------------------------- -->
-
-    <!-- Implementation -->
-    <div>
-        <h2 id="sectionImplementation">Implementation</h2>
-
-        <a href="">2.1 assignment of tasks</a>
-        <a href="">2.2 give information to the team</a>
-        <a href="">2.3 review the project description</a>
-        <a href="">2.4 accept or reject resources</a>
-        <a href="">2.5 handle relationships with subcontractors</a>
-    </div>
-
-    <br class="brx8">
-
-    <!-- Review and retrospective -->
-    <div>
-        <h2 id="sectionReviewRetrospect">Review and retrospective</h2>
-
-        <a href="">2.6 collect and analyze information</a>
-        <a href="">2.7 register costs and resources</a>
-        <a href="">2.8 review the requirements</a>
-        <a href="">2.9 review the products</a>
-        <a href="">2.10 review the requested changes</a>
-        <a href="">2.11 review meetings</a>
-    </div>
-
-    <br class="brx8">
-
-    <!-- ------------------------------------------------------- -->
-    <!-- -----------------------EVALUATION---------------------- -->
-    <!-- ------------------------------------------------------- -->
-
-    <!-- Show new features -->
-    <div>
-        <h2 id="sectionShowFeatures">Show new features</h2>
-        <a href="">3.1 Show what was done in the cycle</a>
-    </div>
-
-    <br class="brx8">
-
-    <!-- Accept or reject solution -->
-    <div>
-        <h2 id="sectionAcceptReject">Accept or reject solution</h2>
-        <a href="">3.2 assess compliance with plans</a>
-    </div>
-
-    <br class="brx8">
-
-    <!--Add user story to the backlog -->
-    <div>
-        <h2 id="sectionAddUserStory">Add user story to the backlog</h2>
-        <a href="">3.3 identify risks and update plan</a>
-    </div>
-
-    <br class="brx8">
-
-    <!--Take back incomplete task to backlog -->
-    <div>
-        <h2 id="sectionTakeBackIncompleteTask">Take back incomplete task to backlog</h2>
-        <a href="">3.4 the activities without completing will return to the backlog</a>
-    </div>
-
-    <br class="brx8">
-
-    <!--Generate Sprintburndown report -->
-    <div>
-        <h2 id="sectionGenerateSprintBurnDown">Generate Sprintburndown report</h2>
-        <a href="">3.5 generate monitoring report</a>
-    </div>
-
-    <br class="brx8">
+                <mark>Roles: </mark> Scrum master, stackholders<br>
+            </p>
 
 
-    <!-- ------------------------------------------------------- -->
-    <!-- -----------------------CLOSING------------------------- -->
-    <!-- ------------------------------------------------------- -->
+            <br class="brx8">
 
-    <!-- Closing Implementation -->
-    <div>
-        <h2 id="sectionCImplementation">Closing Implementation</h2>
+            <!-- Assign and estimate prority -->
+            <div>
+                <h2 id="sectionAssignEstimate">Assign and estimate prority</h2>
+                <a id="a17">1.7 Establish estimated time</a>
+                <p id="p17">
+                    <mark>Description: </mark> <br>
+                    Establecer el Tiempo Estimado para desarrollar cada actividad considerando la información <br>
+                    histórica y las Metas Cuantitativas para el Proyecto<br>
+                    <mark>Output: </mark> Tiempo estimado y metas cuatitativas<br>
+                    <mark>Roles: </mark> Scrum master<br>
+                </p>
 
-        <a href="">4.1 Formalize the termination of the cycle</a>
-    </div>
-    <br class="brx8">
+                <a id="a18">1.8 Define characteristics of resources</a>
+                <p id="p18">
+                    <mark>Description: </mark> <br>
+                    Elaborar el Plan de Adquisiciones y Capacitación, definiendo las características y el calendario en
+                    <br>
+                    cuanto a recursos humanos, materiales, equipo y herramientas, incluyendo la capacitación requerida
+                    <br>
+                    para que el equipo de trabajo pueda<br>
+                    <mark>Output: </mark> Plan de adquisicion y capacitacion<br>
+
+                    <mark>Roles: </mark> Scrum master<br>
+                </p>
+
+                <a id="a19">1.9 Conform work team</a>
+                <p id="p19">
+                    <mark>Description: </mark> <br>
+                    Conformar el Equipo de Trabajo , asignando roles y responsabilidades basá ndose en la Descripción
+                    <br>
+                    del Proyecto<br>
+                    <mark>Input: </mark> Descripcion del proyecto<br>
+                    <mark>Roles: </mark> Scrum Owner, Scrum Master<br>
+                </p>
+
+                <a id="a110">1.10 Assign start and end dates to each activity</a>
+                <p id="p110">
+                    <mark>Description: </mark> <br>
+                    Asignar fechas de inicio y fin a cada una de las actividades para generar el Calendario de trabajo
+                    <br>
+                    tomando en cuenta los recursos asignados, la secuencia y dependencia de las actividades<br>
+                    <mark>Output: </mark> Calendario<br>
+
+                    <mark>Roles: </mark> Scrum master<br>
+                </p>
+
+            </div>
+
+            <br class="brx8">
+
+            <!-- Define the capacity -->
+            <div>
+                <h2 id="sectionDefineCapacity">Define the capacity</h2>
+
+                <a id="a111">1.11 Evaluate estimated cost</a>
+                <p id="p111">
+                    <mark>Description: </mark> <br>
+                    Evaluar y documentar el Costo Estimado del proyecto, tomando en cuenta las Metas Cuantitativas para
+                    el Proyecto<br>
+                    <mark>Input: </mark> Metas cuantitativas<br>
+                    <mark>Output: </mark> Costo estimado<br>
+
+                    <mark>Roles: </mark> Scrum master<br>
+                </p>
+
+                <a id="a112">1.12 Identify risks</a>
+                <p id="p112">
+                    <mark>Description: </mark> <br>
+                    Identificar, describir y evaluar los riesgos que pueden afectar el proyecto, quecontemple riesgos
+                    <br>
+                    relacionados con el equipo de trabajo incluyendo al Cliente y a los usuarios, riesgos con la <br>
+                    tecnologí a o la metodologí a, riesgos con la organizació n del proyecto (costo, tiempo, alcance y
+                    <br>
+                    recursos) o riesgos externos al proyecto. Identificar la probabilidad e impacto de cada riesgo <br>
+                    estimando sus implicaciones en los objetivos del proyecto (aná lisis cuantitativo). Priorizar los
+                    <br>
+                    efectos de los riesgos sobre los objetivos del proyecto (aná lisis cualitativo). Desarrollar <br>
+                    procedimientos para reducir el impacto de los riesgos. Documentar en el Plan de Manejo de Riesgos o
+                    actualizarlo.<br>
+                    <mark>Output: </mark> Plan de Manejo de Riesgos<br>
+                    <mark>Roles: </mark> Scrum Owner, Scrum Master<br>
+                </p>
+
+                <a id="a113">1.13 Generate project plan</a>
+                <p id="p113">
+                    <mark>Description: </mark> <br>
+                    Generar el Plan del Proyecto o actualizarlo antes de iniciar un nuevo ciclo. Además el Plan del <br>
+                    Proyecto se puede actualizar a causa de Solicitud de Cambios por parte del Cliente, Acciones <br>
+                    Correctivas o Preventivas provenientes de Gestión de Proyectos o Acciones Correctivas de este <br>
+                    proceso<br>
+                    <mark>Input: </mark> Solicitudes de cambio, acciones correctivas o preventivas<br>
+                    <mark>Output: </mark> Plan del proyecto<br>
+
+                    <mark>Roles: </mark> Scrum master<br>
+                </p>
+
+                <a id="a114">1.14 Generate development plan</a>
+                <p id="p114">
+                    <mark>Description: </mark> <br>
+                    Generar el Plan de Desarrollo en función del Plan del Proyecto o actualizarlo antes de iniciar un
+                    <br>
+                    nuevo ciclo. Ademá s el Plan de Desarrollo se puede actualizar a causa de Solicitud de Cambios por
+                    <br>
+                    parte del Cliente, Acciones Correctivas o Preventivas provenientes de Gestió n de Proyectos o <br>
+                    Acciones Correctivas de este proceso<br>
+                    <mark>Input: </mark> Plan del proyecto<br>
+                    <mark>Output: </mark>Plan de desarrollo<br>
+
+                    <mark>Roles: </mark> Scrum Owner, Scrum Master<br>
+                </p>
+
+                <a id="a115">1.15 Verify development plan</a>
+                <p id="p115">
+                    <mark>Description: </mark> <br>
+                    Verificar el Plan del Proyecto y el Plan de Desarrollo<br>
+                    <mark>Input: </mark> Plan del proyecto, plan de desarrollo<br>
+                    <mark>Output: </mark> Reporte de verificacion<br>
+
+                    <mark>Roles: </mark> Scrum Owner, Scrum Master<br>
+                </p>
+
+                <a id="a116">1.16 Correct development plan</a>
+                <p id="p116">
+                    <mark>Description: </mark> <br>
+                    Corregir los defectos encontrados en el Plan del Proyecto y en el Plan de Desarrollo con base en el
+                    <br>
+                    Reporte de Verificación y obtener la aprobació n de las correccione<br>
+                    <mark>Input: </mark> Reporte de verificacion<br>
+                    <mark>Output: </mark> Plan del proyecto, plan de desarrollo<br>
+
+                    <mark>Roles: </mark> Scrum master<br>
+                </p>
+
+                <a id="a117">1.17 Validate development plan</a>
+                <p id="p117">
+                    <mark>Description: </mark> <br>
+                    Validar el Plan del Proyecto y el Plan de Desarrollo<br>
+                    <mark>Input: </mark> Plan del proyecto, plan de desarrollo<br>
+                    <mark>Output: </mark> reporte de validacion<br>
+
+                    <mark>Roles: </mark> Scrum owner<br>
+                </p>
+
+                <a id="a118">1.18 Correct development plan</a>
+                <p id="p118">
+                    <mark>Description: </mark> <br>
+                    Corregir los defectos encontrados en el Plan del Proyecto y Plan de Desarrollo con base en el <br>
+                    Reporte de Validación y obtener la aprobación de las correcciones<br>
+                    <mark>Input: </mark> reporte de validacion<br>
+                    <mark>Output: </mark> Plan del proyecto, plan de desarrollo<br>
+
+                    <mark>Roles: </mark> Scrum master<br>
+                </p>
+
+                <a id="a119">1.19 Start the cycle</a>
+                <p id="p119">
+                    <mark>Description: </mark> <br>
+                    Dar inicio formal a un nuevo ciclo una vez que se haya asegurado el cumplimiento de las condiciones
+                    iniciales del ciclo<br>
+                    <mark>Roles: </mark> Scrum Owner, Scrum Master<br>
+                </p>
+
+            </div>
+
+            <br class="brx8">
+
+            <!-- ------------------------------------------------------- -->
+            <!-- -----------------------EXECUTION----------------------- -->
+            <!-- ------------------------------------------------------- -->
+
+            <!-- Implementation -->
+            <div>
+                <h2 id="sectionImplementation">Implementation</h2>
+
+                <a id="a21">2.1 assignment of tasks</a>
+                <p id="p21">
+                    <mark>Description: </mark> <br>
+                    Acordar con el Responsable de Desarrollo y Mantenimiento del proyecto la asignación de tareas al
+                    <br>
+                    Equipo de Trabajo incluyendo a los subcontratistas.<br>
+                    <mark>Input: </mark> Equipo de trabajo<br>
+                    <mark>Roles: </mark> Scrum master<br>
+                </p>
+                <a id="a22">2.2 give information to the team</a>
+                <p id="p22">
+                    <mark>Description: </mark> <br>
+                    Acordar la distribución de la información necesaria al equipo de trabajo con base en el Plan de
+                    Comunicación e Implantación.<br>
+                    <mark>Input: </mark> Plan de comunicación e implantacion<br>
+                    <mark>Roles: </mark> Scrum master<br>
+                </p>
+                <a id="a23">2.3 review the project description</a>
+                <p id="p23">
+                    <mark>Description: </mark> <br>
+                    Revisar con el Responsable de Desarrollo y Mantenimiento del proyecto la Descripción del Producto,
+                    <br>
+                    el Equipo de Trabajo y Calendario.<br>
+                    <mark>Input: </mark> descripcion del producto, equipo de trabajo, calendario<br>
+                    <mark>Output: </mark> descripcion del producto, equipo de trabajo, calendario<br>
+                    <mark>Roles: </mark> Scrum master<br>
+                </p>
+                <a id="a24">2.4 accept or reject resources</a>
+                <p id="p24">
+                    <mark>Description: </mark> <br>
+                    Dar seguimiento al Plan de Adquisiciones y Capacitación. Aceptar o rechazar la Asignación de <br>
+                    Recursos humanos o subcontratistas. Distribuir los recursos a los miembros del equipo para que <br>
+                    puedan llevar a cabo las actividades.<br>
+                    <mark>Input: </mark> Plan de Adquisiciones y Capacitación, asignacion de recursos<br>
+                    <mark>Output: </mark> asignacion de recursos<br>
+
+                    <mark>Roles: </mark> scrum master, scrum owner<br>
+                </p>
+                <a id="a25">2.5 handle relationships with subcontractors</a>
+                <p id="p25">
+                    <mark>Description: </mark> <br>
+                    Manejar la relació n con subcontratistas que implica planificar, revisar y auditar las actividades,
+                    <br>
+                    asegurando la calidad de los productos o servicios contratados y el cumplimiento con los está ndares
+                    <br>
+                    y especificaciones acordadas.<br>
+                    <mark>Roles: </mark> scrum master, scrum owner<br>
+                </p>
+            </div>
+
+            <br class="brx8">
+
+            <!-- Review and retrospective -->
+            <div>
+                <h2 id="sectionReviewRetrospect">Review and retrospective</h2>
+
+                <a id="a26">2.6 collect and analyze information</a>
+                <p id="p26">
+                    <mark>Description: </mark> <br>
+                    Recolectar y analizar los Reportes de Actividades , Reportes de Mediciones y Sugerencias de Mejora y
+                    <br>
+                    productos de trabajo.<br>
+                    <mark>Output: </mark> reporte de actividades, reporte de mediciones y sugerencias de mejora<br>
+
+                    <mark>Roles: </mark> Scrum master<br>
+                </p>
+                <a id="a27">2.7 register costs and resources</a>
+                <p id="p27">
+                    <mark>Description: </mark> <br>
+                    Registrar los costos y recursos reales del ciclo.<br>
+                    <mark>Output: </mark> costos estimados<br>
+
+                    <mark>Roles: </mark> Scrum master<br>
+                </p>
+                <a id="a28">2.8 review the requirements</a>
+                <p id="p28">
+                    <mark>Description: </mark> <br>
+                    Revisar el Registro de Rastreo de los requerimientos del usuario a través del ciclo. <br>
+                    <mark>Input: </mark> registro de rastreo<br>
+                    <mark>Output: </mark> registro de rastreo<br>
+
+                    <mark>Roles: </mark> Scrum master<br>
+                </p>
+                <a id="a29">2.9 review the products</a>
+                <p id="p29">
+                    <mark>Description: </mark> <br>
+                    Revisar los productos generados durante el ciclo, que forman parte de la Configuración de
+                    Software<br>
+                    <mark>Input: </mark> Configuración de Software<br>
+                    <mark>Output: </mark> Configuración de Software<br>
+                    <mark>Roles: </mark> Scrum master<br>
+                </p>
+                <a id="a210">2.10 review the requested changes</a>
+                <p id="p210">
+                    <mark>Description: </mark> <br>
+                    Recibir y analizar las Solicitudes de Cambios e incorporar los cambios aprobados en el Plan del <br>
+                    Proyecto y en el Plan de Desarrollo. En caso de cambios a requerimientos se incorporan al inicio de
+                    <br>
+                    un nuevo ciclo.<br>
+                    <mark>Input: </mark> solicitudes de cambio<br>
+                    <mark>Output: </mark> plan de proyecto, plan de desarollo<br>
+
+                    <mark>Roles: </mark> Scrum master<br>
+                </p>
+                <a id="a211">2.11 review meetings</a>
+                <p id="p211">
+                    <mark>Description: </mark> <br>
+                    Conduce reuniones de revisió n con el equipo de trabajo y con el Cliente, generando Minutas con <br>
+                    puntos tratados y acuerdos tomados.<br>
+                    <mark>Output: </mark> minutas<br>
+
+                    <mark>Roles: </mark> Scrum master, scrum team, stackholders<br>
+                </p>
 
 
-    <!-- Review and retrospective Closing -->
-    <div>
-        <h2 id="sectionCReviewRetrospect"> Closing Review and retrospective</h2>
+            </div>
 
-        <a href="">4.2 effect closure</a>
-        <a href="">4.3 Measurement and improvement report</a>
-        <a href="">4.4 identify lessons learned</a>
-    </div>
+            <br class="brx8">
 
-    <br class="brx8">
-    <!-- ------------------------------------------------------- -->
-    <!-- ------------------------------------------------------- -->
-    <!-- ------------------------------------------------------- -->
+            <!-- ------------------------------------------------------- -->
+            <!-- -----------------------EVALUATION---------------------- -->
+            <!-- ------------------------------------------------------- -->
+
+            <!-- Show new features -->
+            <div>
+                <h2 id="sectionShowFeatures">Show new features</h2>
+                <a id="a31">3.1 Show what was done in the cycle</a>
+                <p id="p31">
+                    <mark>Description: </mark> <br>
+                    El equipo se reune a comentar las entregas de dicho ciclo y se comenta que fue lo que salio bien<br>
+
+                    <mark>Roles: </mark> Scrum master, scrum team<br>
+                </p>
+
+            </div>
+
+            <br class="brx8">
+
+            <!-- Accept or reject solution -->
+            <div>
+                <h2 id="sectionAcceptReject">Accept or reject solution</h2>
+                <a id="a32">3.2 assess compliance with plans</a>
+                <p id="p32">
+                    <mark>Description: </mark> <br>
+                    Evaluar el cumplimiento del Plan del Proyecto y el Plan de Desarrollo , con respecto al alcance,
+                    <br>
+                    costo, calendario, equipo de trabajo, proceso y se establecen Acciones Correctivas<br>
+                    <mark>Input: </mark> plan de proyecto, plan de desarrollo<br>
+
+                    <mark>Roles: </mark> Scrum master<br>
+                </p>
+
+            </div>
+
+            <br class="brx8">
+
+            <!--Add user story to the backlog -->
+            <div>
+                <h2 id="sectionAddUserStory">Add user story to the backlog</h2>
+                <a id="a33">3.3 identify risks and update plan</a>
+                <p id="p33">
+                    <mark>Description: </mark> <br>
+                    Dar seguimiento y controlar el Plan de Manejo de Riesgos . Identificar nuevos riesgos y actualizar
+                    el plan.<br>
+                    <mark>Input: </mark> plan de manejo de riesgos<br>
+                    <mark>Output: </mark> plan de manejo de riesgos<br>
+
+                    <mark>Roles: </mark> Scrum owner<br>
+                </p>
+
+            </div>
+
+            <br class="brx8">
+
+            <!--Take back incomplete task to backlog -->
+            <div>
+                <h2 id="sectionTakeBackIncompleteTask">Take back incomplete task to backlog</h2>
+                <a id="a34">3.4 the activities without completing will return to the backlog</a>
+                <p id="p34">
+                    <mark>Description: </mark> <br>
+                    Las actividades que no fueron completadas por el equipo durante el ciclo regresan al backlog para
+                    <br>
+                    volver a ser analizadas por el product owner<br>
+                    <mark>Output: </mark> Backlog<br>
+
+                    <mark>Roles: </mark> Scrum team, scrum owner<br>
+                </p>
+
+            </div>
+
+            <br class="brx8">
+
+            <!--Generate Sprintburndown report -->
+            <div>
+                <h2 id="sectionGenerateSprintBurnDown">Generate Sprintburndown report</h2>
+                <a id="a35">3.5 generate monitoring report</a>
+                <p id="p35">
+                    <mark>Description: </mark> <br>
+                    Generar el Reporte de Seguimiento del proyecto, considerando los Reportes de Actividades<br>
+                    <mark>Input: </mark> reportes de actividades<br>
+                    <mark>Output: </mark> reporte de seguimiento<br>
+
+                    <mark>Roles: </mark> Scrum master<br>
+                </p>
+
+            </div>
+
+            <br class="brx8">
+
+
+            <!-- ------------------------------------------------------- -->
+            <!-- -----------------------CLOSING------------------------- -->
+            <!-- ------------------------------------------------------- -->
+
+            <!-- Closing Implementation -->
+            <div>
+                <h2 id="sectionCImplementation">Closing Implementation</h2>
+
+                <a id="a41">4.1 Formalize the termination of the cycle</a>
+                <p id="p41">
+                    <mark>Description: </mark> <br>
+                    Formalizar la terminación del ciclo o del proyecto de acuerdo al Protocolo de Entrega establecido en
+                    <br>
+                    el Plan del Proyecto y obtener el Documento de Aceptación.<br>
+                    <mark>Input: </mark> protocolo de entregas, plan del proyecto<br>
+                    <mark>Output: </mark> documento de aceptacion<br>
+
+                    <mark>Roles: </mark> Scrum master, stackholders<br>
+                </p>
+
+            </div>
+            <br class="brx8">
+
+
+            <!-- Review and retrospective Closing -->
+            <div>
+                <h2 id="sectionCReviewRetrospect"> Closing Review and retrospective</h2>
+
+                <a id="a42">4.2 effect closure</a>
+                <p id="p42">
+                    <mark>Description: </mark> <br>
+                    Efectuar el cierre con subcontratistas de acuerdo al contrato establecido.<br>
+
+                    <mark>Roles: </mark> scrum master, scrum owner<br>
+                </p>
+
+                <a id="a43">4.3 Measurement and improvement report</a>
+                <p id="p43">
+                    <mark>Description: </mark> <br>
+                    Generar el Reporte de Mediciones y Sugerencias de Mejora de este proceso, de acuerdo al Plan de
+                    Mediciones de Procesos.<br>
+                    <mark>Input: </mark> plan de medicion de procesos<br>
+                    <mark>Output: </mark> reporte de mejoras, sugerencias de mejora<br>
+
+                    <mark>Roles: </mark> scrum master<br>
+                </p>
+
+                <a id="a44">4.4 identify lessons learned</a>
+                <p id="p44">
+                    <mark>Description: </mark> <br>
+                    Identificar las Lecciones Aprendidas e integrarlas a la Base de Conocimiento. Como ejemplo, se <br>
+                    pueden considerar mejores prácticas, experiencias exitosas de manejo de riesgos problemas <br>
+                    recurrentes, entre otras.<br>
+                    <mark>Output: </mark> lecciones aprendidas, base de conocimientos<br>
+
+                    <mark>Roles: </mark> scrum master<br>
+                </p>
+
+            </div>
+
+            <br class="brx8">
+            <!-- ------------------------------------------------------- -->
+            <!-- ------------------------------------------------------- -->
+            <!-- ------------------------------------------------------- -->
+
+
+            <!-- ------------------------------------------------------- -->
+            <!-- -----------------------Start--------------------------- -->
+            <!-- ------------------------------------------------------- -->
+
+            <!-- map -->
+            <div class="smaller">
+                <h2 id="sectionStart">Start</h2>
+                <br><br>
+                <img src="./resources/DevelopementPlan.png" alt="" usemap="#imgStart">
+                <map name="imgStart">
+                    <area shape="rect" coords="30,30,550,350" alt="DevPlan" href="#sectionDevPlan">
+                </map>
+            </div>
+            <br class="brx8">
+
+            <!-- Developement plan -->
+
+            <div>
+                <h2 id="sectionDevPlan">Developement plan</h2>
+
+                <a id="ac11">1.1 The team has to review the development plan</a>
+                <p id="pc11">
+                    <mark>Description: </mark> <br>
+                    Revisar con los miembros del equipo de trabajo el Plan de Desarrollo actual para <br>
+                    lograr un entendimiento común y obtener su compromiso con el proyecto <br>
+
+                    <mark>Input: </mark><br>
+                    Plan de desarrollo <br>
+
+                    <mark>Roles: </mark> <br>
+                    Scrum master, scrum team <br>
+                </p>
+            </div>
+            <br class="brx8">
+
+
+            <!-- ------------------------------------------------------- -->
+            <!-- -----------------------Requierements------------------- -->
+            <!-- ------------------------------------------------------- -->
+            <!-- REQUIREMENTS -->
+
+            <!-- map -->
+            <div class="smaller">
+                <h2 id="sectionReq">Requirements</h2>
+                <br><br>
+                <button id="button3">More Info</button>
+                <br><br>
+                <p id="p3">
+                    Backlog: <br>
+                    Who: Scrum owner, team, scrum master, stakeholders <br>
+                    Purpose: Create a list of all things that needs to be done in the project
+                </p>
+                <img src="./resources/requirements2.png" alt="" usemap="#imgReq">
+                <map name="imgReq">
+                    <area shape="rect" coords="13,13,220,140" alt="ReqSpec" href="#sectionSpecReq">
+                    <area shape="rect" coords="380,13,585,140" alt="SystemTestingPlan" href="#sectionSystemTesting">
+                    <area shape="rect" coords="13,260,220,380" alt="PutTogether" href="#sectionGenDocs">
+                    <area shape="rect" coords="380,260,585,380" alt="UserManual" href="#sectionUserM">
+                </map>
+            </div>
+            <br class="brx8">
+
+            <!-- Specification of the Requirements -->
+
+            <div>
+                <h2 id="sectionSpecReq">Specification of the Requirements</h2>
+                <a id="ac21">2.1 Create user stories</a>
+                <p id="pc21">
+                    <mark>Description: </mark> <br>
+                    Se describen las tareas que debe realizar el sistema con el formato correcto <br>
+                    <mark>Output: </mark> Backlog<br>
+                    <mark>Roles: </mark> Owner<br>
+                </p>
+                <a id="ac22">2.2 Generate id by user story</a>
+                <p id="pc22">
+                    <mark>Description: </mark> <br>
+                    A los user stories se les asigna un id <br>
+                    <mark>Input: </mark> Backlog<br>
+                    <mark>Output: </mark> Backlog<br>
+                    <mark>Roles: </mark> Owner <br>
+                </p>
+
+                <a id="ac23">2.3 Assign priority </a>
+                <p id="pc23">
+                    <mark>Description: </mark> <br>
+                    Se asgina el id dependiendo la prioridad de la tarea del mas importante al menor <br>
+                    <mark>Input: </mark> Backlog<br>
+                    <mark>Output: </mark> Backlog<br>
+                    <mark>Roles: </mark> Owner<br>
+                </p>
+
+                <a id="ac24">2.4 Define an estimate by task </a>
+                <p id="pc24">
+                    <mark>Description: </mark> <br>
+                    Se calcula un tiempo estimado para realizar la tarea <br>
+                    <mark>Input: </mark> Backlog<br>
+                    <mark>Output: </mark> Backlog<br>
+                    <mark>Roles: </mark> Owner<br>
+                </p>
+                <a id="ac25">2.5 Define success criteria </a>
+                <p id="pc25">
+                    <mark>Description: </mark> <br>
+                    Definir como se va a definir cuando una tarea ya este completa<br>
+                    <mark>Input: </mark> Backlog<br>
+                    <mark>Output: </mark> Backlog<br>
+                    <mark>Roles: </mark> Owner<br>
+                </p>
+                <a id="ac26">2.6 Verify requirements specification </a>
+                <p id="pc26">
+                    <mark>Description: </mark> <br>
+                    Verificar la Especificación de Requerimientos (Ver1 ).<br>
+                    <mark>Input: </mark> Especificaciones de requerimientos<br>
+                    <mark>Output: </mark> Reporte de verificacion<br>
+                    <mark>Roles: </mark> Master<br>
+                </p>
+                <a id="ac27">2.7 Correct defects of requirements specifications </a>
+                <p id="pc27">
+                    <mark>Description: </mark> <br>
+                    Corregir los defectos encontrados en la Especificación de Requerimientos con <br>
+                    base en el Reporte de Verificación y obtener la aprobació n de las correcciones <br>
+                    <mark>Input: </mark> Reporte de verificacion<br>
+                    <mark>Output: </mark> Especificaciones de requerimientos<br>
+                    <mark>Roles: </mark> Owner, diseñador de interface<br>
+                </p>
+                <a id="ac28">2.8 Validate specification requirements </a>
+                <p id="pc28">
+                    <mark>Description: </mark> <br>
+                    Validar la Especificación de Requerimientos (Val1 )<br>
+                    <mark>Input: </mark> Especificaciones de requerimientos<br>
+                    <mark>Output: </mark> Reporte de validación<br>
+                    <mark>Roles: </mark> Master<br>
+                </p>
+                <a id="ac29">2.9 Correct defects of requirements specifications </a>
+                <p id="pc29">
+                    <mark>Description: </mark> <br>
+                    Corregir los defectos encontrados en la Especificación de Requerimientos con base en <br>
+                    el Reporte de Validación y obtener la aprobació n de las correcciones. <br>
+                    <mark>Input: </mark> Reporte de validacion<br>
+                    <mark>Output: </mark> Especificaciones de requerimientos<br>
+                    <mark>Roles: </mark> Owner, diseñador de interface<br>
+                </p>
+            </div>
+            <br class="brx8">
+
+            <!-- System testing plan -->
+
+            <div>
+                <h2 id="sectionSystemTesting">System testing plan</h2>
+                <a id="ac210">2.10 develop or modify system test plan</a>
+                <p id="pc210">
+                    <mark>Description: </mark> <br>
+                    Elaborar o modificar Plan de Pruebas de Sistema <br>
+                    <mark>Input: </mark> Plan de pruebas<br>
+                    <mark>Output: </mark> Plan de pruebas<br>
+                    <mark>Roles: </mark> Responsable de pruebas, owner<br>
+                </p>
+
+                <a id="ac211">2.11 verify testing plan</a>
+                <p id="pc211">
+                    <mark>Description: </mark> <br>
+                    Verificar el Plan de Pruebas de Sistema (Ver2 ) <br>
+                    <mark>Input: </mark> Plan de pruebas<br>
+                    <mark>Output: </mark> Reporte de verifiacion<br>
+                    <mark>Roles: </mark> Master<br>
+                </p>
+
+                <a id="ac212">2.12 correct defects plan tests </a>
+                <p id="pc212">
+                    <mark>Description: </mark> <br>
+                    Corregir los defectos encontrados en el Plan de Pruebas de Sistema con base en <br>
+                    el Reporte de Verificación y obtener la aprobació n de las correcciones. <br>
+                    <mark>Input: </mark> Reporte de verifiacion<br>
+                    <mark>Output: </mark> Plan de pruebas<br>
+                    <mark>Roles: </mark> Responsable de pruebas<br>
+                </p>
+
+
+            </div>
+            <br class="brx8">
+
+            <!-- User manual  -->
+
+            <div>
+                <h2 id="sectionUserM">User manual</h2>
+                <a id="ac213">2.13 document user manual preliminary version</a>
+                <p id="pc213">
+                    <mark>Description: </mark> <br>
+                    Documentar la versión preliminar del Manual de Usuario o modificar el manual existente. <br>
+                    <mark>Output: </mark> Manual de usuario<br>
+                    <mark>Roles: </mark> Master<br>
+                </p>
+
+                <a id="ac214">2.14 verify user manual</a>
+                <p id="pc214">
+                    <mark>Description: </mark> <br>
+                    Verificar el Manual de Usuario (Ver3 ) <br>
+                    <mark>Input: </mark> Manual de usuario<br>
+                    <mark>Output: </mark> Reporte de verificacion<br>
+                    <mark>Roles: </mark> Master<br>
+                </p>
+
+                <a id="ac215">2.15 correct user manual </a>
+                <p id="pc215">
+                    <mark>Description: </mark> <br>
+                    Corregir los defectos encontrados en el Manual de Usuario con base en el <br>
+                    Reporte de Verificación y obtener la aprobación de las correcciones. <br>
+                    <mark>Input: </mark> Reporte de verifiacion<br>
+                    <mark>Output: </mark> Manual de usuario<br>
+                    <mark>Roles: </mark> Master<br>
+                </p>
+            </div>
+            <br class="brx8">
+
+            <!-- Put together generated documents -->
+
+            <div>
+                <h2 id="sectionGenDocs">Put together generated documents </h2>
+                <a id="ac216">2.16 incorporate documents to software configuration</a>
+                <p id="pc216">
+                    <mark>Description: </mark> <br>
+                    Incorporar Especificación de Requerimientos, Plan de Pruebas de Sistema y Manual de Usuario <br>
+                    como líneas base a la Configuración de Software <br>
+                    <mark>Input: </mark> Especificaciones de requerimientos, plan de pruebas, manual de usuario,
+                    backlog<br>
+                    <mark>Output: </mark> Configuracion de software<br>
+                    <mark>Roles: </mark> Master<br>
+                </p>
+
+            </div>
+            <br class="brx8">
+
+            <!-- ------------------------------------------------------- -->
+            <!-- -----------------------Design-------------------------- -->
+            <!-- ------------------------------------------------------- -->
+
+            <!-- map -->
+            <div class="smaller">
+                <h2 id="sectionDesign2">Design</h2>
+                <br><br>
+                <img src="./resources/design2.png" alt="" usemap="#imgDesign2">
+                <map name="imgDesign2">
+                    <area shape="rect" coords="13,13,220,140" alt="DocAnalysis" href="#sectionDocAnalysis">
+                    <area shape="rect" coords="380,13,585,140" alt="PrepareIntegration" href="#sectionPrepareInt">
+                    <area shape="rect" coords="380,260,585,380" alt="PutTogetherG" href="#sectionPutTogDoc">
+                </map>
+            </div>
+            <br class="brx8">
+
+            <!-- Document analysis and design -->
+
+
+            <div>
+                <h2 id="sectionDocAnalysis"> Document analysis and design </h2>
+                <a id="ac31">3.1 Distribute tasks</a>
+                <p id="pc31">
+                    <mark>Description: </mark> <br>
+                    Distribuir tareas a los miembros del equipo de trabajo según su rol, de acuerdo <br>
+                    al Plan de Desarrollo actual. <br>
+                    <mark>Input: </mark> Plan de desarrollo<br>
+                    <mark>Roles: </mark> Master, owner, diseñador<br>
+                </p>
+
+                <a id="ac32">3.2 document analysis and design </a>
+                <p id="pc32">
+                    <mark>Description: </mark> <br>
+                    Analizar la Especificación de Requerimientos para generar la descripción de la estructura
+                    interna del <br>
+                    sistema y su descomposición en subsistemas, y éstos a su vez en componentes, definiendo las
+                    interfaces
+                    entre<br>
+                    ellos, Describir el detalle de la apariencia y el comportamiento de la interfaz con base en la
+                    <br>
+                    Especificación de Requerimientos de forma que se puedan prever los recursos para su
+                    implementación, <br>
+                    Describir el detalle de los componentes que permita su construcción de manera evidente, Generar
+                    o actualizar
+                    <br>
+                    el Análisis y Diseño, Generar o modificar el Registro de Rastreo <br>
+                    <mark>Input: </mark> Analisis y diseño<br>
+                    <mark>Output: </mark> Analisis y diseño<br>
+                    <mark>Roles: </mark> Owner, diseñador interface, diseñador<br>
+                </p>
+
+                <a id="ac33">3.3 verify analysis and design</a>
+                <p id="pc33">
+                    <mark>Description: </mark> <br>
+                    Verificar el Análisis y Diseño y el Registro de Rastreo<br>
+                    <mark>Input: </mark> Analisis y diseño, registro de rastreo<br>
+                    <mark>Output: </mark> Reporte de verificacion<br>
+                    <mark>Roles: </mark> Master<br>
+                </p>
+
+                <a id="ac34">3.4 correct defects</a>
+                <p id="pc34">
+                    <mark>Description: </mark> <br>
+                    Corregir los defectos encontrados en el Análisis y Diseño y en el Registro <br>
+                    de Rastreo con base en el Reporte de Verificación y obtener la aprobación de las
+                    correcciones.<br>
+                    <mark>Input: </mark> Reporte de verificacion<br>
+                    <mark>Output: </mark> Analisis y diseño, registro de rastreo<br>
+                    <mark>Roles: </mark> Owner, diseñador interface, diseñador<br>
+                </p>
+
+                <a id="ac35">3.5 validate analysis and design</a>
+                <p id="pc35">
+                    <mark>Description: </mark> <br>
+                    Validar el Análisis y Diseño (Val2)<br>
+                    <mark>Input: </mark> Analisis y diseño <br>
+                    <mark>Output: </mark> Reporte de validacion<br>
+                    <mark>Roles: </mark> Stackholder, responsable de pruebas<br>
+                </p>
+
+                <a id="ac36">3.6 correct defects</a>
+                <p id="pc36">
+                    <mark>Description: </mark> <br>
+                    Corregir los defectos encontrados en el Análisis y Diseño con base en el Reporte de Validación
+                    <br>
+                    y obtener la aprobación de las correcciones.<br>
+                    <mark>Input: </mark> reporte de validacion<br>
+                    <mark>Output: </mark> Analisis y diseño<br>
+                    <mark>Roles: </mark> Owner, diseñador interface, diseñador<br>
+                </p>
+
+
+            </div>
+            <br class="brx8">
+            <!-- Prepare integration tests -->
+
+            <div>
+                <h2 id="sectionPrepareInt"> Prepare integration tests</h2>
+                <a id="ac37">3.7 Prepare integration tests</a>
+                <p id="pc37">
+                    <mark>Description: </mark> <br>
+                    Elaborar o modificar Plan de Pruebas de Integración<br>
+                    <mark>Input: </mark> Plan de pruebas de integracion<br>
+                    <mark>Output: </mark> Plan de pruebas de integracion<br>
+                    <mark>Roles: </mark> Responsable de pruebas<br>
+                </p>
+
+                <a id="ac38">3.8 verify </a>
+                <p id="pc38">
+                    <mark>Description: </mark> <br>
+                    Verificar el Plan de Pruebas de Integración (Ver5).<br>
+                    <mark>Input: </mark> Plan de pruebas de integracion<br>
+                    <mark>Output: </mark> Reporte de verificacion<br>
+                    <mark>Roles: </mark> Master<br>
+                </p>
+
+                <a id="ac39">3.9 correct</a>
+                <p id="pc39">
+                    <mark>Description: </mark> <br>
+                    Corregir los defectos encontrados en el Plan de Pruebas de Integración con base en el Reporte de
+                    <br>
+                    Verificación y obtener la aprobación de las correcciones.<br>
+                    <mark>Input: </mark> Reporte de verificacion<br>
+                    <mark>Output: </mark> Plan de pruebas de integracion<br>
+                    <mark>Roles: </mark> Responsable de pruebas<br>
+                </p>
+
+
+            </div>
+            <br class="brx8">
+
+            <!-- Put together generated documents -->
+
+            <div>
+                <h2 id="sectionPutTogDoc"> Put together generated documents </h2>
+                <a href="">3.10 incorporate to software configuration</a>
+                <p id="pc310">
+                    <mark>Description: </mark> <br>
+                    Incorporar Análisis y Diseño, Registro de Rastreo y Plan de Pruebas de Integración <br>
+                    como líneas base a la Configuración de Software.<br>
+                    <mark>Input: </mark> Plan de pruebas de integracion, analisis y diseño, registro de rastreo<br>
+                    <mark>Output: </mark> Configuracion de software<br>
+                    <mark>Roles: </mark> Master<br>
+                </p>
+
+            </div>
+            <br class="brx8">
+
+            <!-- ------------------------------------------------------- -->
+            <!-- -----------------------Code---------------------------- -->
+            <!-- ------------------------------------------------------- -->
+
+            <!-- map -->
+            <div class="large">
+                <h2 id="sectionCode">Code</h2>
+                <br><br>
+                <img src="./resources/code2.png" alt="" usemap="#imgCode">
+                <map name="imgCode">
+                    <area shape="rect" coords="13,13,220,180" alt="elaborateProduct" href="#sectionElaborateProduct">
+                    <area shape="rect" coords="380,13,585,180" alt="PutTogetherGD" href="#sectionPutTogDoc2">
+                </map>
+            </div>
+            <br class="brx8">
+            <!-- Elaborate product -->
+
+            <div>
+                <h2 id="sectionElaborateProduct"> Elaborate product </h2>
+
+                <a id="ac41">4.1 distribute tasks</a>
+                <p id="pc41">
+                    <mark>Description: </mark> <br>
+                    Distribuir tareas a los miembros del equipo de trabajo según su rol<br>
+                    <mark>Input: </mark> Plan de desarrollo<br>
+                    <mark>Roles: </mark> Master<br>
+                </p>
+
+                <a id="ac42">4.2 Build components</a>
+                <p id="pc42">
+                    <mark>Description: </mark> <br>
+                    Construir o modificar el(los) Componente (s) de software: Implementar o modificar Componente (s)
+                    con base a
+                    <br>
+                    la parte detallada del Análisis y Diseño, Definir y aplicar pruebas unitarias para verificar que
+                    el <br>
+                    funcionamiento de cada componente esté acorde con la parte detallada del Análisis y Diseño,
+                    Corregir los
+                    <br>
+                    defectos encontrados hasta lograr pruebas unitarias exitosas (sin defectos), Actualizar el
+                    Registro de <br>
+                    Rastreo, incorporando los componentes construidos o modificados.<br>
+                    <mark>Output: </mark> Componenetes del sofware<br>
+                    <mark>Roles: </mark> Scrum team<br>
+                </p>
+
+                <a id="ac43">4.3 Check trace</a>
+                <p id="pc43">
+                    <mark>Description: </mark> <br>
+                    Verificar el Registro de Rastreo (Ver6 ).<br>
+                    <mark>Input: </mark> registro de rastreo<br>
+                    <mark>Output: </mark> reporte de verificacion<br>
+                    <mark>Roles: </mark> master<br>
+                </p>
+
+                <a id="ac44">4.4 correct tracking</a>
+                <p id="pc44">
+                    <mark>Description: </mark> <br>
+                    Corregir los defectos encontrados en el Registro de Rastreo con base en el Reporte de
+                    Verificación y obtener
+                    <br>
+                    la aprobació n de las correcciones.<br>
+                    <mark>Input: </mark> reporte de verificacion<br>
+                    <mark>Output: </mark> registro de rastreo<br>
+                    <mark>Roles: </mark> scrum team<br>
+                </p>
+
+            </div>
+
+            <br class="brx8">
+
+            <!-- Put together generated documents -->
+
+            <div>
+                <h2 id="sectionPutTogDoc2"> Put together generated documents </h2>
+                <a id="ac45">4.5 Incorporate to software configuration</a>
+                <p id="pc45">
+                    <mark>Description: </mark> <br>
+                    Incorporar Componentes y Registro de Rastreo como lí neas base a la Configuración de
+                    Software<br>
+                    <mark>Input: </mark> componentes del software, registro de rastreo<br>
+                    <mark>Output: </mark> Configuracion del software<br>
+                    <mark>Roles: </mark> Master<br>
+                </p>
+
+            </div>
+            <br class="brx8">
+
+            <!-- ------------------------------------------------------- -->
+            <!-- -----------------------Integration--------------------- -->
+            <!-- ------------------------------------------------------- -->
+
+            <!-- map -->
+            <div class="smaller">
+                <h2 id="sectionIntegration">Integration and Test</h2>
+                <br><br>
+                <img src="./resources/integration2.png" alt="" usemap="#imgIntegration">
+                <map name="imgIntegration">
+                    <area shape="rect" coords="13,13,220,140" alt="OperationsManual" href="#sectionOpsManual">
+                    <area shape="rect" coords="380,13,585,140" alt="Test" href="#sectionTest">
+                    <area shape="rect" coords="13,260,220,380" alt="PutTogether" href="#sectionPutTogDoc3">
+                    <area shape="rect" coords="380,260,585,380" alt="UserManual" href="#sectionUsrManual">
+                </map>
+            </div>
+            <br class="brx8">
+
+            <!-- Operations manual -->
+            <div>
+                <h2 id="sectionOpsManual"> Operations manual </h2>
+
+                <a id="ac51">5.1 distribute tasks</a>
+                <p id="pc51">
+                    <mark>Description: </mark> <br>
+                    Distribuir tareas a los miembros del equipo de trabajo según su rol, de acuerdo al Plan de
+                    Desarrollo <br>
+                    actual<br>
+                    <mark>Input: </mark> Plan de desarrollo<br>
+                    <mark>Roles: </mark> master<br>
+                </p>
+
+                <a id="ac52">5.2 perform integration and testing</a>
+                <p id="pc52">
+                    <mark>Description: </mark> <br>
+                    Realizar integración y pruebas: Integrar los componentes en subsistemas o en el sistema del
+                    Software y <br>
+                    aplicar las pruebas siguiendo el Plan de Pruebas de Integración, documentando los resultados en
+                    un Reporte
+                    <br>
+                    de Pruebas de Integración, Corregir los defectos encontrados, con base en Reporte de Pruebas de
+                    Integración,
+                    <br>
+                    hasta lograr una prueba de integración exitosa (sin defectos), Actualizar el Registro de
+                    Rastreo.<br>
+                    <mark>Input: </mark> Registro de rastreo, plan de pruebas de integracion, reporte de pruebas<br>
+                    <mark>Output: </mark> registro de rastreo<br>
+                    <mark>Roles: </mark> scrum team<br>
+                </p>
+
+                <a id="ac53">5.3 Document manual operations</a>
+                <p id="pc53">
+                    <mark>Description: </mark> <br>
+                    Documentar el Manual de Operación o modificar el manual existente.<br>
+                    <mark>Input: </mark> Manual de operaciones<br>
+                    <mark>Output: </mark> Manual de operaciones<br>
+                    <mark>Roles: </mark> master<br>
+                </p>
+
+                <a id="ac54">5.4 verify manual operations</a>
+                <p id="pc54">
+                    <mark>Description: </mark> <br>
+                    Verificar el Manual de Operación (Ver7).<br>
+                    <mark>Input: </mark> Manual de operaciones<br>
+                    <mark>Output: </mark> reporte de verifiacion<br>
+                    <mark>Roles: </mark> master<br>
+                </p>
+
+                <a id="ac55">5.5 correct manual operations</a>
+                <p id="pc55">
+                    <mark>Description: </mark> <br>
+                    Corregir los defectos encontrados en el Manual de Operación con base en el Reporte de
+                    Verificación y obtener
+                    <br>
+                    la aprobación de las correcciones.<br>
+                    <mark>Input: </mark> reporte de verifiacion<br>
+                    <mark>Output: </mark> Manual de operaciones<br>
+                    <mark>Roles: </mark> master<br>
+                </p>
+
+            </div>
+            <br class="brx8">
+
+            <!-- Test -->
+            <div>
+                <h2 id="sectionTest"> Test </h2>
+
+                <a id="ac56">5.6 perform tests</a>
+                <p id="pc56">
+                    <mark>Description: </mark> <br>
+                    Realizar las pruebas de sistema siguiendo el Plan de Pruebas de Sistema, documentando los
+                    resultados en un
+                    <br>
+                    Reporte de Pruebas de Sistema.<br>
+                    <mark>Input: </mark> plan de pruebas del sistema<br>
+                    <mark>Output: </mark> reporte de pruebas del sistema<br>
+                    <mark>Roles: </mark> responsable de purebas<br>
+                </p>
+
+                <a id="ac57">5.7 correct defects</a>
+                <p id="pc57">
+                    <mark>Description: </mark> <br>
+                    Corregir los defectos encontrados en las pruebas de sistema con base en el Reporte de Pruebas de
+                    Sistema y
+                    <br>
+                    obtener la aprobación de las correcciones.<br>
+                    <mark>Input: </mark> reporte de pruebas del sistema<br>
+                    <mark>Output: </mark> plan de pruebas del sistema<br>
+                    <mark>Roles: </mark> scrum team<br>
+                </p>
+
+            </div>
+            <br class="brx8">
+
+            <!-- User manual -->
+            <div>
+                <h2 id="sectionUsrManual"> User Manual </h2>
+
+                <a id="ac58">5.8 Document user manual</a>
+                <p id="pc58">
+                    <mark>Description: </mark> <br>
+                    Documentar el Manual de Usuario o modificar el existente.<br>
+                    <mark>Input: </mark> Manual de usuario<br>
+                    <mark>Output: </mark> Manual de usuario<br>
+                    <mark>Roles: </mark> master<br>
+                </p>
+
+                <a id="ac59">5.9 verify user manual</a>
+                <p id="pc59">
+                    <mark>Description: </mark> <br>
+                    Verificar el Manual de Usuario (Ver8).<br>
+                    <mark>Input: </mark> Manual de usuario<br>
+                    <mark>Output: </mark> reporte de verificacion<br>
+                    <mark>Roles: </mark> master<br>
+                </p>
+
+                <a id="ac510">5.10 correct user manual</a>
+                <p id="pc510">
+                    <mark>Description: </mark> <br>
+                    Corregir los defectos encontrados en el Manual de Usuario con base en el Reporte de Verificación
+                    y obtener
+                    <br>
+                    la aprobación de las correcciones.<br>
+                    <mark>Input: </mark> reporte de verificacion<br>
+                    <mark>Output: </mark> Manual de usuario<br>
+                    <mark>Roles: </mark> master<br>
+                </p>
+
+            </div>
+            <br class="brx8">
+
+            <!-- Put together generated documents -->
+            <div>
+                <h2 id="sectionPutTogDoc3"> Put together generated documents </h2>
+                <a id="ac511">5.11 Incorporate to software configuration</a>
+                <p id="pc511">
+                    <mark>Description: </mark> <br>
+                    Incorporar Software, Reporte de Pruebas de Integración, Registro de Rastreo, Manual de Operación
+                    y Manual de
+                    <br>
+                    Usuario como líneas base a la Configuración de Software.<br>
+                    <mark>Input: </mark> manual de operaciones, de usuario, plan de pruebas del sistema, registro de
+                    rastreo,
+                    <br>
+                    <mark>Output: </mark> configuracion del software<br>
+                    <mark>Roles: </mark> master<br>
+                </p>
+
+            </div>
+            <br class="brx8">
+
+
+            <!-- ------------------------------------------------------- -->
+            <!-- -----------------------Closing------------------------- -->
+            <!-- ------------------------------------------------------- -->
+
+            <!-- map -->
+            <div class="smaller">
+                <h2 id="sectionClosing2">Closing</h2>
+                <br><br>
+                <img src="./resources/closing2.png" alt="" usemap="#imgClosing2">
+                <map name="imgClosing2">
+                    <area shape="rect" coords="13,13,220,140" alt="DocMaintenance" href="#sectionDocMaint">
+                    <area shape="rect" coords="380,13,585,140" alt="LessonsLearned" href="#sectionIdentifyLessons">
+                    <area shape="rect" coords="380,260,585,380" alt="GenerateReport" href="#sectionGenerateReport">
+                </map>
+            </div>
+            <br class="brx8">
+
+            <!-- Document in maintenance manual -->
+            <div>
+                <h2 id="sectionDocMaint"> Document in maintenance manual </h2>
+
+                <a id="ac61">6.1 document maintenance manual</a>
+                <p id="pc61">
+                    <mark>Description: </mark> <br>
+                    Documentar el Manual de Mantenimiento o modificar el existente.<br>
+                    <mark>Input: </mark> manual de mantenimiento<br>
+                    <mark>Output: </mark> manual de mantenimiento<br>
+                    <mark>Roles: </mark> master<br>
+                </p>
+
+                <a id="ac62">6.2 check maintenance manual</a>
+                <p id="pc62">
+                    <mark>Description: </mark> <br>
+                    Verificar el Manual de Mantenimiento (Ver9 ).<br>
+                    <mark>Input: </mark> manual de mantenimiento<br>
+                    <mark>Output: </mark> reporte de verificacion<br>
+                    <mark>Roles: </mark> master<br>
+                </p>
+                <a id="ac63">6.3 correct manual maintenance</a>
+                <p id="pc63">
+                    <mark>Description: </mark> <br>
+                    Corregir los defectos encontrados en el Manual de Mantenimiento con base en el Reporte de
+                    Verificación y
+                    <br>
+                    obtener la aprobació n de las correcciones.<br>
+                    <mark>Input: </mark> reporte de verificacion<br>
+                    <mark>Output: </mark> manual de mantenimiento<br>
+                    <mark>Roles: </mark> master<br>
+                </p>
+
+                <a id="ac64">6.4 incorporate manual to software configuration</a>
+                <p id="pc64">
+                    <mark>Description: </mark> <br>
+                    Incorporar Manual de Mantenimiento como lí nea base a la Configuración de Software .<br>
+                    <mark>Input: </mark> manual de mantenimiento<br>
+                    <mark>Output: </mark> configuracion del software <br>
+                    <mark>Roles: </mark> master<br>
+                </p>
+
+            </div>
+            <br class="brx8">
+
+            <!-- Identify lessons learned -->
+            <div>
+                <h2 id="sectionIdentifyLessons"> Identify lessons learned </h2>
+
+                <a id="ac65">6.5 say it went well</a>
+                <p id="pc65">
+                    <mark>Description: </mark> <br>
+                    Identificar que fue lo que salio bien <br>
+
+                    <mark>Roles: </mark> scrum team <br>
+                </p>
+
+                <a id="ac66">6.6 say that it can be improved</a>
+                <p id="pc66">
+                    <mark>Description: </mark> <br>
+                    Identificar que fue lo que se puede mejorar<br>
+                    <mark>Input: </mark> <br>
+                    <mark>Output: </mark> <br>
+                    <mark>Roles: </mark> scrum team<br>
+                </p>
+
+                <a id="ac67">6.7 say that it did not go well</a>
+                <p id="pc67">
+                    <mark>Description: </mark> <br>
+                    Identificar los problemas que tuvieron durante el proyecto<br>
+                    <mark>Input: </mark> <br>
+                    <mark>Output: </mark> <br>
+                    <mark>Roles: </mark> scrum team<br>
+                </p>
+
+            </div>
+            <br class="brx8">
+
+            <!-- Generate report of measurements and suggestions -->
+
+            <div>
+                <h2 id="sectionGenerateReport"> Generate report of measurements and suggestions </h2>
+                <a id="ac68">6.8 generate report of measurements and suggestions</a>
+                <p id="pc68">
+                    <mark>Description: </mark> <br>
+                    Generar el Reporte de Mediciones y Sugerencias de Mejora<br>
+                    <mark>Output: </mark> Reporte de mejoras y sugerencias<br>
+                    <mark>Roles: </mark> master<br>
+                </p>
+
+            </div>
+            <br class="brx8">
+
+            <!-- TABLES   -->
+
+            <h2 id="sectionTable"> Roles</h2>
+            <br>
+            <div class="container">
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th>Roles</th>
+                            <th>Descripción</th>
+                            <th>Responsabilidades</th>
+                            <th>Skills</th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Scrum owner</td>
+                            <td> The Scrum Product Owner is a central role within the Scrum Framework. Most of the
+                                responsibilities of the classical product manager and the project manager are combined
+                                within this single role. He represents the end customer and/or other stakeholders and is
+                                responsible for maximizing the value of the product by ensuring that the right work is
+                                done at the right time.
+                            </td>
+                            <td>Managing the Scrum Product Backlog, Release Management, Stakeholder Management, Work
+                                closely with the Scrum Team, reaching the project goals
+                            </td>
+                            <td></td>
+
+                        </tr>
+                        <tr>
+                            <td>Scrum Master</td>
+                            <td>The Scrum Master is part of the Scrum Team and acts as a servant-leader for the Scrum
+                                Team.
+                            </td>
+                            <td>Guard the Scrum Team from external requests and disruptions, Act as a change agent and
+                                adapt processes to maximize productivity of the team, Coach the Scrum Team, Remove
+                                impediments for the Scrum Team, Ensure efficient communication between the Scrum Team
+                                and the Scrum Product Owner, Facilitate the various Scrum Events, guard the team members
+                                from "urgent requests"
+                            </td>
+                            <td></td>
+
+                        </tr>
+                        <tr>
+                            <td>Scrum Team</td>
+                            <td>A Scrum Team is a collection of individuals working together to deliver the requested
+                                and committed product increments
+                            </td>
+                            <td>They have to breakdown the requirements, create task, estimate and distribute them. In
+                                other words this means that they have to create the Sprint Backlog, They have to perform
+                                the short Daily Sprint Meeting, They have to ensure that at the end of the Sprint
+                                potentially shippable functionality is delivered, They have to update the status and the
+                                remaining efforts for their tasks to allow creation of a Sprint Burndown Diagram.
+                            </td>
+                            <td> Individuals within the Scrum Team will most certainly have specialized skills and
+                                focus. However to achieve best possible performance it would be optimal to have a
+                                balanced set of skills. Only then the Scrum Team will be able to deal with the
+                                ever-changing challenges and can act as autonomous as it is possible. On one hand this
+                                means that a Scrum Team should be multidisciplinary (developers, tester, architects etc)
+                                right from the beginning.</td>
+
+
+                        </tr>
+                        <tr>
+                            <td>Stakeholders</td>
+                            <td>These are the people who’ll help you discover, develop, release, support and promote the
+                                product. They include: customers, project sponsors, colleagues who work with and
+                                understand your customers, people from each part of the business needed to deliver the
+                                product, external parties such as donors or regulators.
+                            </td>
+                            <td></td>
+                            <td></td>
+
+                        </tr>
+                        <tr>
+                            <td>Diseñador de interfaz</td>
+                            <td></td>
+                            <td></td>
+                            <td>Conocimiento en diseño de interfaces de usuario y criterios ergonómicos.</td>
+                        </tr>
+                        <tr>
+                            <td>Diseñador</td>
+                            <td></td>
+                            <td></td>
+                            <td>Conocimiento y experiencia en el diseño de la estructura de los componentes de software
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Responsable de pruebas</td>
+                            <td></td>
+                            <td></td>
+                            <td> Conocimiento y experiencia en la planificación y realización de pruebas de integración
+                                y de sistema</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <br class="brx8">
+
 
 </body>
 

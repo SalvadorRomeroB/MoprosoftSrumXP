@@ -1,7 +1,4 @@
 /* Format */
-body {
-    background-color: whitesmoke;
-}
 
 br.brx8 {
     line-height: 16;
@@ -20,6 +17,11 @@ img {
     border-radius: 30px;
 }
 
+.large img {
+    width: 600px;
+    height: 200px;
+}
+
 /* Buttons */
 
 #fixed {
@@ -28,6 +30,14 @@ img {
     left: 0px;
     padding: 15px 5px;
 }
+
+#fixedR {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    padding: 15px 5px;
+}
+
 
 div button:hover {
 
@@ -74,7 +84,7 @@ div {
 }
 
 div a {
-    margin: 0 200px 10px 200px;
+    margin: 0 250px 10px 250px;
 }
 
 h1 {
@@ -102,9 +112,43 @@ h2 {
 }
 
 p {
-    color: #111;
+    color: #fff;
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     line-height: 28px;
     margin: 0 0 48px;
+}
+
+
+/* TABLES */
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    background: linear-gradient(45deg, #49a09d, #5f2c82);
+    font-family: sans-serif;
+    font-weight: 100;
+}
+
+
+table {
+
+    border-collapse: collapse;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+th,
+td {
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+}
+
+th {
+    text-align: center;
 }
