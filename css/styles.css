@@ -30,6 +30,14 @@ img {
     top: 0px;
     right: 0px;
     padding: 15px 5px;
+    background-color: rgba(255, 255, 255, 0.2);
+
+}
+
+#fixed:hover,
+#fixedR:hover,
+#fixedRD:hover {
+    background: rgba(255, 255, 255, 0.133);
 }
 
 #fixedR {
@@ -38,6 +46,8 @@ img {
     top: 50px;
     right: 0px;
     padding: 15px 5px;
+    background-color: rgba(255, 255, 255, 0.2);
+
 }
 
 #fixedRD {
@@ -46,8 +56,25 @@ img {
     top: 100px;
     right: 0px;
     padding: 15px 5px;
+    background-color: rgba(255, 255, 255, 0.2);
+
 }
 
+/* Indexes */
+#indexL {
+    position: fixed;
+    width: 100px;
+    top: 0px;
+    left: 0px;
+    padding: 15px 5px;
+    background-color: #363541;
+
+}
+
+#hide {
+    position: fixed;
+    top: 45px;
+}
 
 div button:hover {
 
@@ -55,7 +82,7 @@ div button:hover {
 }
 
 button {
-    background-color: rgb(54, 53, 65);
+    background-color: #363541;
     border: none;
     color: white;
     padding: 15px 32px;
@@ -70,7 +97,7 @@ button {
 
 /* Links */
 
-div a {
+div a:not(#nostyle) {
     background-color: rgb(54, 53, 65);
     box-shadow: 0 5px 0 rgb(49, 49, 53);
     display: block;
@@ -82,10 +109,18 @@ div a {
 
 }
 
-div a:hover {
+div a:hover:not(#nostyle) {
     background-color: rgb(63, 61, 90);
     cursor: pointer;
 }
+
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+    display: block;
+    color: rgb(76, 87, 181);
+}
+
 
 /* FONT */
 
@@ -144,12 +179,16 @@ body {
     font-weight: 100;
 }
 
-
 table {
 
     border-collapse: collapse;
     overflow: hidden;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+tr:hover {
+    background: rgba(255, 255, 255, 0.133);
 }
 
 th,
@@ -161,4 +200,8 @@ td {
 
 th {
     text-align: center;
+}
+
+.container {
+    margin: 150px;
 }

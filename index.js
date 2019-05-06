@@ -1,6 +1,8 @@
 $(document).ready(() => $("p").hide())
 
+
 $(document).ready(() => {
+
 
     $("#button1").click(() => $("#p1").animate({
         height: 'toggle'
@@ -354,16 +356,101 @@ $(document).ready(() => {
         $("body,html").animate({
                 scrollTop: $("#sectionTable").offset().top
             },
-            800 //speed
+            600
         );
     });
-});
-$(document).ready(() => {
     $("#fixedRD").click(() => {
         $("body,html").animate({
                 scrollTop: $("#sectionTemplates").offset().top
             },
-            800 //speed
+            600 //speed
         );
     });
+    $("#movePlanning").click(() => {
+        $("body,html").animate({
+                scrollTop: $("#sectionPlanning").offset().top
+            },
+            600
+        );
+    });
+    $("#moveExcecution").click(() => {
+        $("body,html").animate({
+                scrollTop: $("#sectionExecution").offset().top
+            },
+            600
+        );
+    });
+    $("#moveEvaluation").click(() => {
+        $("body,html").animate({
+                scrollTop: $("#sectionEvaluation").offset().top
+            },
+            600
+        );
+    });
+    $("#moveClosing1").click(() => {
+        $("body,html").animate({
+                scrollTop: $("#sectionExecution2").offset().top
+            },
+            600
+        );
+    });
+
+    $("#moveStart").click(() => {
+        $("body,html").animate({
+                scrollTop: $("#sectionStart").offset().top
+            },
+            600
+        );
+    });
+    $("#moveRequirements").click(() => {
+        $("body,html").animate({
+                scrollTop: $("#sectionReq").offset().top
+            },
+            600
+        );
+    });
+    $("#moveDesign").click(() => {
+        $("body,html").animate({
+                scrollTop: $("#sectionDesign2").offset().top
+            },
+            600
+        );
+    });
+    $("#moveCode").click(() => {
+        $("body,html").animate({
+                scrollTop: $("#sectionCode").offset().top
+            },
+            600
+        );
+    });
+    $("#moveIntegration").click(() => {
+        $("body,html").animate({
+                scrollTop: $("#sectionIntegration").offset().top
+            },
+            600
+        );
+    });
+    $("#moveClosing2").click(() => {
+        $("body,html").animate({
+                scrollTop: $("#sectionClosing2").offset().top
+            },
+            600
+        );
+    });
+    $("#I").click(() => {
+        $("body,html").animate({
+                scrollTop: $("#section1").offset().top
+            },
+            600
+        );
+    });
+    $("#II").click(() => {
+        $("body,html").animate({
+                scrollTop: $("#section2").offset().top
+            },
+            600
+        );
+    });
+
+
 });

@@ -15,13 +15,57 @@
 
 <body>
 
+    <!-- Menus -->
+    <button id="fixed">Home</button>
+    <button id="fixedR">Roles</button>
+    <button id="fixedRD">Templates</button>
+
+    <!-- Indexes -->
+    <table id="hide">
+        <thead>
+            <th id="I"> I </th>
+        </thead>
+        <tr>
+            <td id="movePlanning"> Planning </td>
+        </tr>
+        <tr>
+            <td id="moveExcecution">Excecution</td>
+        </tr>
+        <tr>
+            <td id="moveEvaluation">Evaluation</td>
+        </tr>
+        <tr>
+            <td id="moveClosing1">Closing</td>
+        </tr>
+        <br>
+        <thead>
+            <th id="II"> II </th>
+        </thead>
+        <tr>
+            <td id="moveStart">Start</td>
+        </tr>
+        <tr>
+            <td id="moveRequirements">Requirements</td>
+        </tr>
+        <tr>
+            <td id="moveDesign">Design</td>
+        </tr>
+        <tr>
+            <td id="moveCode">Code</td>
+        </tr>
+        <tr>
+            <td id="moveIntegration">Integration</td>
+        </tr>
+        <tr>
+            <td id="moveClosing2">Closing</td>
+        </tr>
+    </table>
+
     <!-- MOPROSOFT PROCESSES IMAGE COORDS -->
     <div>
         <h1 id="section0">MoProSoft Processes</h1>
         <br><br><br>
-        <button id="fixed">Home</button>
-        <button id="fixedR">Roles</button>
-        <button id="fixedRD">Templates</button>
+
 
         <img src="resources/moprosoft.png" alt="moprosoft" usemap="#img1">
         <map name="img1">
@@ -139,6 +183,29 @@
 
     <br class="brx8">
 
+    <!-- Evaluation -->
+    <div class="smaller">
+        <h2 id="sectionEvaluation">Evaluation</h2>
+        <button id="button6">More Info</button>
+        <br><br>
+        <p id="p6">
+            Review meeting: <br>
+            Who: Scrum owner, team and scrum master. <br>
+            Purpose : Team shows which scrum backlog items they <br>
+            complete based on the success criteria during the sprint.
+        </p>
+        <img src="resources/integration.png" alt="" usemap="#imgEvaluation">
+        <map name="imgEvaluation">
+            <area shape="rect" coords="30,20,235,90" alt="ShowNewFeatures" href="#sectionShowFeatures">
+            <area shape="rect" coords="360,20,560,90" alt="AcceptRejectSolution" href="#sectionAcceptReject">
+            <area shape="rect" coords="30,160,235,250" alt="TakeBackIncompleteTask"
+                href="#sectionTakeBackIncompleteTask">
+            <area shape="rect" coords="360,160,560,250" alt="AddNewStories" href="#sectionAddUserStory">
+            <area shape="rect" coords="30,310,230,380" alt="SprintBurnDown" href="#sectionGenerateSprintBurnDown">
+        </map>
+    </div>
+
+    <br class="brx8">
     <!-- Closing -->
     <div class="smaller">
         <h2 id="sectionExecution2">Closing</h2>
@@ -166,45 +233,7 @@
 
     <br class="brx8">
 
-    <!-- Evaluation -->
-    <div class="smaller">
-        <h2 id="sectionEvaluation">Evaluation</h2>
-        <button id="button6">More Info</button>
-        <br><br>
-        <p id="p6">
-            Review meeting: <br>
-            Who: Scrum owner, team and scrum master. <br>
-            Purpose : Team shows which scrum backlog items they <br>
-            complete based on the success criteria during the sprint.
-        </p>
-        <img src="resources/integration.png" alt="" usemap="#imgEvaluation">
-        <map name="imgEvaluation">
-            <area shape="rect" coords="30,20,235,90" alt="ShowNewFeatures" href="#sectionShowFeatures">
-            <area shape="rect" coords="360,20,560,90" alt="AcceptRejectSolution" href="#sectionAcceptReject">
-            <area shape="rect" coords="30,160,235,250" alt="TakeBackIncompleteTask"
-                href="#sectionTakeBackIncompleteTask">
-            <area shape="rect" coords="360,160,560,250" alt="AddNewStories" href="#sectionAddUserStory">
-            <area shape="rect" coords="30,310,230,380" alt="SprintBurnDown" href="#sectionGenerateSprintBurnDown">
-        </map>
-    </div>
 
-    <br class="brx8">
-
-    <!-- CLOSING -->
-    <div class="smaller">
-        <h2 id="sectionClosing">Closing</h2>
-        <button id="button7">More Info</button>
-        <br><br>
-        <p id="p7">
-            Retrospective meeting: <br>
-            Who: Scrum owner, team and scrum master. <br>
-            Purpose: The retrospective is an integral part of the inspect <br>
-            and adapt process. This help yo improve team performance.
-        </p>
-        <img src="resources/closure.png" alt="">
-    </div>
-
-    <br class="brx8">
 
     <!-- ------------------------------------------------------- -->
     <!-- -----------------------PLANNING------------------------- -->
@@ -1491,7 +1520,7 @@
             </div>
             <br class="brx8">
 
-            <!-- TABLES   -->
+            <!-- TABLES ROLES  -->
 
             <h2 id="sectionTable"> Roles</h2>
             <br>
@@ -1607,7 +1636,7 @@
                         <td>
                             Document describing the purpose of the meetings held, the
                             points and agreements.</td>
-                        <td><a href="./templates/Minutas.docx" download>Minutes</a></td>
+                        <td><a id="nostyle" href="./templates/Minutas.docx" download>Minutes</a></td>
                     </tr>
 
                     <tr>
@@ -1615,34 +1644,37 @@
                         <td>
                             Registration of participants, date, place, duration and defects
                             found.</td>
-                        <td><a href="./templates/Verificacion.docx" download>Verification</a></td>
+                        <td><a id="nostyle" href="./templates/Verificacion.docx" download>Verification</a></td>
                     </tr>
                     <tr>
                         <td>Validation</td>
                         <td> Registration of participants, date, place, duration and defects
                             found.</td>
-                        <td><a href="./templates/Validacion.docx" download>Validation</a></td>
+                        <td><a id="nostyle" href="./templates/Validacion.docx" download>Validation</a></td>
                     </tr>
                     <tr>
                         <td>Measurement Report</td>
                         <td>Contains the metric that will be used to measure the progress of the project and suggestions
                             to improve project management</td>
-                        <td><a href="./templates/Reporte de Medicion.docx" download>Measurement Report</a></td>
+                        <td><a id="nostyle" href="./templates/Reporte de Medicion.docx" download>Measurement Report</a>
+                        </td>
                     </tr>
                     <tr>
                         <td>Project Plan</td>
                         <td>Document used as a guide for the execution and control of the project</td>
-                        <td><a href="./templates/Plan de Proyecto.docx" download>Proyect Plan</a></td>
+                        <td><a id="nostyle" href="./templates/Plan de Proyecto.docx" download>Proyect Plan</a></td>
                     </tr>
                     <tr>
                         <td>Tracking Report</td>
                         <td>It contains the record of the progress of the activities carried out.</td>
-                        <td><a href="./templates/Reporte de Seguimiento.docx" download>Tracking Report</a></td>
+                        <td><a id="nostyle" href="./templates/Reporte de Seguimiento.docx" download>Tracking Report</a>
+                        </td>
                     </tr>
                     <tr>
                         <td>Acceptance Document</td>
                         <td>The deliverables that were made during the development of the project are established</td>
-                        <td><a href="./templates/Documento de Aceptacion.docx" download>Acceptance Document</a></td>
+                        <td><a id="nostyle" href="./templates/Documento de Aceptacion.docx" download>Acceptance
+                                Document</a></td>
                     </tr>
                     <tr>
                         <td>
@@ -1650,23 +1682,26 @@
                         <td>
                             Contains the list of human resources, training, materials, equipment and tools
                             necessary for the execution of the project.</td>
-                        <td><a href="./templates/Plan de adquisicion y capacitacion.docx" download> Acquisition and
+                        <td><a id="nostyle" href="./templates/Plan de adquisicion y capacitacion.docx" download>
+                                Acquisition and
                                 Training Plan</a></td>
                     </tr>
                     <tr>
-                        <td>Learned lessons</td>
+                        <td>Lessons Learned</td>
                         <td>
                             Records of best practices, problems
                             recurring and successful experiences in solving
                             problems encountered during the development of the
                             draft.</td>
-                        <td><a href="./templates/lecciones aprendidas.docx" download>Lecciones Aprendidas</a></td>
+                        <td><a id="nostyle" href="./templates/lecciones aprendidas.docx" download>Lessons Learned</a>
+                        </td>
                     </tr>
                     <tr>
                         <td>Development plan</td>
                         <td>Document used as a guide for the execution of the
                             software development or maintenance.</td>
-                        <td><a href="./templates/plan de desarrollo.docx" download>Development plan</a></td>
+                        <td><a id="nostyle" href="./templates/plan de desarrollo.docx" download>Development plan</a>
+                        </td>
                     </tr>
 
                 </table>
