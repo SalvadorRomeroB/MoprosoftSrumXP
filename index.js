@@ -358,3 +358,12 @@ $(document).ready(() => {
         );
     });
 });
+$(document).ready(() => {
+    $("#fixedRD").click(() => {
+        $("body,html").animate({
+                scrollTop: $("#sectionTemplates").offset().top
+            },
+            800 //speed
+        );
+    });
+});

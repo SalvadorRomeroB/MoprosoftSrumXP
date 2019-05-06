@@ -26,14 +26,24 @@ img {
 
 #fixed {
     position: fixed;
+    width: 80px;
     top: 0px;
-    left: 0px;
+    right: 0px;
     padding: 15px 5px;
 }
 
 #fixedR {
     position: fixed;
-    top: 0px;
+    width: 80px;
+    top: 50px;
+    right: 0px;
+    padding: 15px 5px;
+}
+
+#fixedRD {
+    position: fixed;
+    width: 80px;
+    top: 100px;
     right: 0px;
     padding: 15px 5px;
 }
@@ -60,7 +70,7 @@ button {
 
 /* Links */
 
-a {
+div a {
     background-color: rgb(54, 53, 65);
     box-shadow: 0 5px 0 rgb(49, 49, 53);
     display: block;
@@ -72,7 +82,7 @@ a {
 
 }
 
-a:hover {
+div a:hover {
     background-color: rgb(63, 61, 90);
     cursor: pointer;
 }
